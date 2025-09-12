@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-cont">
+        <h1 id="title">Tradutor</h1>
+      </div>
+      <div class="input-cont">
+        <div class="ic--1">
+          <select name="source-lingo" id="source-lingo">
+            <option value="null">Detectar</option>
+            <option value="PT">Português (Br)</option>
+            <option value="EN">Inglês (US)</option>
+            <option value="ES">Espanhol</option>
+            <option value="FR">Francês</option>
+            <option value="DE">Alemão</option>
+            <option value="IT">Italiano</option>
+            <option value="NL">Holandês</option>
+            <option value="PL">Polonês</option>
+          </select>
+          <label for="target-lingo">para:</label>
+          <select name="target-lingo" id="target-lingo">
+            <option value="pt-BR">Português (Br)</option>
+            <option value="en-US">Inglês (US)</option>
+            <option value="ES">Espanhol</option>
+            <option value="FR">Francês</option>
+            <option value="DE">Alemão</option>
+            <option value="IT">Italiano</option>
+            <option value="NL">Holandês</option>
+            <option value="PL">Polonês</option>
+          </select>
+          <button id="trad-btn">Traduzir</button>
+        </div>
+        <div class="ic ic--2">
+          <textarea
+            name="source-text"
+            id="source-input"
+            maxlength="5000"
+            placeholder="Insira seu texto aqui."
+          ></textarea>
+        </div>
+        <div class="ic ic--3">
+          <div class="trad-board">
+            <p id="trad-txt">A tradução aparecerá aqui.</p>
+          </div>
+        </div>
+        <div class="ic--4 hidden">
+          <h2 id="detected-lingo"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
