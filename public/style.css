@@ -144,3 +144,22 @@ label {
 .hidden {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 85dvw;
+  }
+  .input-cont {
+    flex-direction: column;
+  }
+  .ic {
+    width: 85%;
+  }
+  .ic--1 {
+    flex-wrap: wrap;
+  }
+  #trad-btn {
+    width: 40dvw;
+    font-size: 2rem;
+  }
+}
