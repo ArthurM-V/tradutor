@@ -14,7 +14,7 @@ html {
 body {
   width: 100dvw;
   min-height: 100dvh;
-  background-color: #dadada;
+  background: linear-gradient(120deg, #e60f45, #b10c5f, #ee328a);
 }
 
 .container {
@@ -23,31 +23,35 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 45dvw;
-  min-height: 15dvh;
-  border: 0.3rem solid #e60f45;
-  background-color: #f7f7f7;
+  min-height: 55dvh;
   border-radius: 15px;
-  box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 16px 8px rgba(0, 0, 0, 0.4);
 }
 
 .head-cont {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 16px 0 0;
   padding: 1rem;
+  background-color: #e60f45;
 }
 
 .head-cont h1 {
-  color: #e60f45;
+  color: #fff;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   text-align: center;
 }
 
 .input-cont {
   width: 100%;
-  min-height: auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #f7f7f7;
+  border-radius: 0 0 15px 15px;
 }
 
 .ic {
@@ -59,19 +63,20 @@ body {
 .ic--4 {
   width: 100%;
   min-height: 3dvh;
+  padding: 1rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #e60f45;
 }
 
 .ic--1 {
-  width: 100%;
+  width: 75%;
   min-height: 4dvh;
   padding: 1rem;
   background: #f7f7f7;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-around;
   gap: 0.5rem;
 }
 
@@ -89,14 +94,14 @@ label {
 
 #trad-btn {
   width: 7dvw;
-  height: 5dvh;
+  height: 4.5dvh;
   padding: 0.25rem;
   margin-right: 1rem;
   border: none;
   border-radius: 7.5px;
   background: #e60f45;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-family: "Roboto Condensed", sans-serif;
   cursor: pointer;
@@ -104,7 +109,7 @@ label {
 
 #source-input {
   width: 100%;
-  height: 25dvh;
+  height: 35dvh;
   border: 0.2rem solid #e60f45;
   border-radius: 7.5px;
   outline: none;
@@ -116,7 +121,7 @@ label {
 
 .trad-board {
   width: 100%;
-  height: 25dvh;
+  height: 35dvh;
   background: #f7f7f7;
   border: 0.2rem solid #e60f45;
   border-radius: 7.5px;

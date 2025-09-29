@@ -1,4 +1,5 @@
 const srcLingo = document.getElementById("source-lingo");
+const optLingo = document.querySelector("drop-lingo");
 const tgtLingo = document.getElementById("target-lingo");
 const dtctCont = document.querySelector(".ic--4");
 const dtctLingo = document.getElementById("detected-lingo");
@@ -38,6 +39,7 @@ const idiomasMap = {
   no: "Norueguês",
   th: "Tailandês",
 };
+
 async function detectaIdioma() {
   let sentIdioma = "";
   let idioma = tgtLingo.value;
