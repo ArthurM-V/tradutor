@@ -152,19 +152,31 @@ label {
 
 @media (max-width: 600px) {
   .container {
-    width: 85dvw;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: none;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .head-cont {
+    background: linear-gradient(120deg, #e60f45, #b10c5f, #ee328a);
   }
   .input-cont {
     flex-direction: column;
+    border-radius: 0;
   }
   .ic {
-    width: 85%;
+    width: 95%;
   }
   .ic--1 {
     flex-wrap: wrap;
   }
   #trad-btn {
     width: 40dvw;
+    min-height: 6.5dvh;
     font-size: 2rem;
   }
 }
